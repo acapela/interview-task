@@ -16,14 +16,14 @@ The App contains feed with multiple items, where each of them can have various h
 
 Height of each item can also be dynamic and changed for any reason not-known in advance. (eg. item, when clicked, doubles its height, but height can also change as a result of resizing the window, etc)
 
-The goal is to highlight one item that is the most visible on the screen from all of them.
+The goal is to watch which item is 'the most visible on the screen' and highlight it.
 
 Requirements:
 
 - only one item can be highlighted at most at any time
 - if 2+ items are fully visible at any moment, the one that is 'the most central' on the screen is considered 'the most visible'
 - if item is resized for any reason (eg. window resize) - highlighted item should be correctly updated if needed
-- if no item that was highlighted is visible anymore (page has large bottom padding) - no item should be highlighted
+- if some item was highlighted, but later no item is visible anymore (eg. page has large bottom padding, so you can scroll to the bottom making no items visible) - no item should be highlighted
 
 Additional design / architecture insights:
 
