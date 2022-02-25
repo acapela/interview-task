@@ -34,6 +34,6 @@ Additional design / architecture insights:
 
 - (extreme nice-to-have): handling list scrolled all the way to the top/bottom.
 
-If list is scrolled all the way to the top, first item is certainly not 'the most central' (as items below are). Thus first item would never be 'the most visible'. What we can do is to adjust it somehow so we still highlight every of the items at least for a short period at some point. (tip: we can modify what is considered 'center' of the screen when scroll is near the start/end)
+  If list is scrolled all the way to the top, first item is certainly not 'the most central' (as items below are). Thus first item would never be 'the most visible'. What we can do is to adjust it somehow so we still highlight every of the items at least for a short period at some point. (tip: we can modify what is considered 'center' of the screen when scroll is near the start/end)
 
 Thanks! Good luck!
