@@ -8,13 +8,15 @@ interface Props {
 }
 
 export function FeedItem({ children, className, addedHeight }: Props) {
-  const [isExpaneded, setIsExpaneded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  const addedHeightMultiplier = isExpaneded ? 2 : 1;
+  const addedHeightMultiplier = isExpanded ? 2 : 1;
+
   return (
     <UIHolder
-      onClick={() => setIsExpaneded(!isExpaneded)}
+      onClick={() => setIsExpanded(!isExpanded)}
       style={{ minHeight: `${addedHeight * addedHeightMultiplier}px` }}
+      className={className}
     >
       {children}
     </UIHolder>

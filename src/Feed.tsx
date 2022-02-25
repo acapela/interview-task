@@ -7,9 +7,11 @@ import { FeedItem } from "./FeedItem";
 const items = range(0, 40);
 
 function getItemAddedHeight(item: number) {
-  if (item % 2 === 0) return 150;
-  if (item % 3 === 0) return 250;
   if (item % 7 === 0) return 450;
+  if (item % 3 === 0) return 250;
+  if (item % 2 === 0) return 150;
+
+  return 50;
 }
 
 export function Feed() {
