@@ -32,7 +32,8 @@ Additional design / architecture insights:
 - the API should be as composable as possible (meaning it is possible to add 'new group' with minimal boilerplate)
 - ideally - the API should not be 'leaking' implementation details to parent components, etc as much as possible
 
-- (extreme nice-to-have): handling list scrolled all the way to the top/bottom
-  If list is scrolled all the way to the top, first item is certainly not 'the most central' (as items below are). Thus first item would never be 'the most visible'. What we can do is consider this, and adjust it so we somehow still highlight all the items at least for a short period at some point
+- (extreme nice-to-have): handling list scrolled all the way to the top/bottom.
+
+If list is scrolled all the way to the top, first item is certainly not 'the most central' (as items below are). Thus first item would never be 'the most visible'. What we can do is to adjust it somehow so we still highlight every of the items at least for a short period at some point. (tip: we can modify what is considered 'center' of the screen when scroll is near the start/end)
 
 Thanks! Good luck!
