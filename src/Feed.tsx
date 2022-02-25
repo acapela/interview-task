@@ -7,9 +7,11 @@ import { FeedItem } from "./FeedItem";
 const items = range(0, 40);
 
 function getItemAddedHeight(item: number) {
-  if (item % 7 === 0) return 450;
-  if (item % 3 === 0) return 250;
-  if (item % 2 === 0) return 150;
+  // Let's ignore 0 index
+  const itemNaturalIndex = item + 1;
+  if (itemNaturalIndex % 7 === 0) return 450;
+  if (itemNaturalIndex % 3 === 0) return 250;
+  if (itemNaturalIndex % 2 === 0) return 150;
 
   return 50;
 }
